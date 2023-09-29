@@ -13,6 +13,7 @@ export function Header() {
             <MapPin size={20} weight="fill" />
             Porto Alegre, RS
           </HeaderButton>
+
           <HeaderButton variant="yellow">
             <ShoppingCart size={20} weight="fill" />
           </HeaderButton>
