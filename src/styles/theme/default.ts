@@ -4,7 +4,7 @@ export const defaultTheme = {
     "base-background": "#FAFAFA",
     "base-card": "#E6E6FA",
     "base-input": "#EDEDED",
-    "base-button": "#E6E5E5",
+    "base-button": "#DCDCDC	",
     "base-hover": "#D7D5D5",
     "base-label": "#8D8686",
     "base-text": "#574F4D",
