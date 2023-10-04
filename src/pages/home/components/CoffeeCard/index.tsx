@@ -9,6 +9,7 @@ import {
   Name,
   Tags
 } from './style'
+
 import { ShoppingCart } from 'phosphor-react'
 
 export interface Coffee {
@@ -50,6 +51,7 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
 
         <AddCartWrapper>
           <QuantityInput />
+
           <button>
             <ShoppingCart size={22} weight="fill" />
           </button>
