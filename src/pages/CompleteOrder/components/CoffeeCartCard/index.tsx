@@ -6,16 +6,42 @@ import {
   CoffeeCartCardContainer,
   RemoveButton
 } from './style'
+import { CartItem } from '../../../../contexts/CartContext'
+import { formatMoney } from '../../../../utils/formatMoney'
+import { useCart } from '../../../../hooks/useCart'
 
-export function CoffeeCartCard() {
+interface CoffeeCartCardProps {
+  coffee: CartItem
+}
+
+export function CoffeeCartCard({ coffee }: CoffeeCartCardProps) {
+  const { changeCartItemQuantity } = useCart()
+
+  function handleIncrease() {
+    changeCartItemQuantity(coffee.id, 'increase')
+  }
+
+  function handleDecrease() {
+    changeCartItemQuantity(coffee.id, 'decrease')
+  }
+
+  const coffeeTotal = coffee.price * coffee.quantity
+
+  const formattedPrice = formatMoney(coffeeTotal)
+
   return (
     <CoffeeCartCardContainer>
       <div>
-        <img src="/public/coffees/tradicional.png" />
+        <img src={`/coffees/${coffee.photo}`} />
         <div>
-          <RegularText color="subtitle">Expresso tradicional</RegularText>
+          <RegularText color="subtitle">{coffee.name}</RegularText>
           <ActionsContainer>
-            <QuantityInput size="small" />
+            <QuantityInput
+              size="small"
+              onDecrease={handleDecrease}
+              onIncrease={handleIncrease}
+              quantity={coffee.quantity}
+            />
 
             <RemoveButton>
               <Trash size={16} />
@@ -25,7 +51,7 @@ export function CoffeeCartCard() {
         </div>
       </div>
 
-      <p>R$ 9,90</p>
+      <p>R$ {formattedPrice}</p>
     </CoffeeCartCardContainer>
   )
 }
