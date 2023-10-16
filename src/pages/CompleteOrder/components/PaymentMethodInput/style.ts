@@ -26,7 +26,7 @@ export const ContentContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.75rem;
+  gap: 0.40rem;
 
   font-size: 0.75rem;
   text-transform: uppercase;
