@@ -1,7 +1,7 @@
-### Coffee Delivery App
+### Coffee Delivery
 
 Descrição
-O Coffee Delivery App é uma aplicação web desenvolvida em **React** usando Vite como bundler, **TypeScript** para tipagem, React Router DOM para navegação, Styled-Components para estilização, Zod para validação de dados e React Hook Form para gerenciar formulários. A aplicação permite aos usuários escolher cafés, adicioná-los ao carrinho e revisar o pedido antes de preencher o formulário de entrega.
+O Coffee Delivery é uma aplicação web desenvolvida em **React** usando Vite como bundler, **TypeScript** para tipagem, React Router DOM para navegação, Styled-Components para estilização, Zod para validação de dados e React Hook Form para gerenciar formulários. A aplicação permite aos usuários escolher cafés, adicioná-los ao carrinho e revisar o pedido antes de preencher o formulário de entrega.
 
 <br>
 
