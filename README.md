@@ -33,7 +33,7 @@ Pré-requisitos
 Instalação
 
 - Clone o repositório: git clone https://github.com/JGabriel12/CoffeeDelivery_
-- Navegue até o diretório do projeto: cd coffee-delivery-app
+- Navegue até o diretório do projeto: cd CoffeeDelivery_
 - Instale as dependências: npm install ou yarn install
 
 <br>
